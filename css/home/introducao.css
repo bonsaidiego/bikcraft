@@ -1,16 +1,15 @@
 .introducao-bg {
   background-color: var(--cor-12);
-  box-shadow: inset 0px -120px var(--cor-0); /* ïnset" faz sombra interna */
+  box-shadow: inset 0px -120px var(--cor-0); /* "inset" faz sombra interna */
 }
 
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* para não somar o "padding" ao "max-width", respeitando o valor de "max-width" somente */
+  padding: 0px 20px;
   max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,18 +33,6 @@
   margin-bottom: 20px;
 }
 
-/* ---------------------- MEDIA QUERY 1200px ---------------------- */
-
-@media (max-width: 1200px) {
-  .introducao h1 {
-    font-size: 48px;
-  }
-
-  .introducao p {
-    font-size: 18px;
-  }
-}
-
 /* ---------------------- MEDIA QUERY 800px ---------------------- */
 
 @media (max-width: 800px) {
@@ -61,7 +48,6 @@
   }
 
   .introducao h1 {
-    font-size: 32px;
     margin-bottom: 16px;
   }
 
