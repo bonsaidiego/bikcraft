@@ -1,5 +1,6 @@
 .tecnologia-bg {
   background-color: var(--cor-11);
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
 }
 
 .tecnologia {
@@ -8,9 +9,81 @@
   gap: 40px;
 }
 
+.tecnologia-conteudo {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.tecnologia-conteudo > span {
+  /* o símbolo ">" seleciona somente o filho imediato ao "div" pai */
+  display: block; /* para aceitar o "padding", porque "span" é elemento "inline" */
+  padding-bottom: 20px;
+}
+
+.tecnologia-conteudo h2 {
+  padding-bottom: 32px;
+}
+
+.tecnologia-conteudo > p {
+  /* o símbolo ">" seleciona somente o filho imediato ao "div" pai */
+  padding-bottom: 32px;
+}
+
+.tecnologia a {
+  margin-bottom: 80px;
+}
+
+.tecnologia-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.tecnologia-vantagens img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.tecnologia-vantagens h3 {
+  margin-bottom: 8px;
+  width: max-content; /* não deixa a frase ser quebrada, mantendo a largura total da frase */
+}
+
 .tecnologia-imagem img {
   width: 100%; /* coloca a imagem com a largura máxima do pai ".tecnologia" */
   height: 100%; /* coloca a imagem com a altura máxima do pai ".tecnologia" */
   object-fit: cover; /* impede que a imagem distorça ao redimensionar a tela */
   object-position: left; /* preserva a esquerda da imagem, começando a cortar a partir da direita */
+}
+
+/* ---------------------- MEDIA QUERY 800px ---------------------- */
+
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    box-shadow: none;
+  }
+
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+
+  .tecnologia-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .tecnologia a {
+    margin-bottom: 60px;
+  }
+
+  .tecnologia-imagem img {
+    display: none;
+  }
+}
+
+/* ---------------------- MEDIA QUERY 600px ---------------------- */
+
+@media (max-width: 600px) {
+  .tecnologia-vantagens {
+    flex-direction: column; /* equivale a definir em colunas, no caso de "display: grid" */
+  }
 }
