@@ -1,0 +1,16 @@
+.tecnologia-bg {
+  background-color: var(--cor-11);
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecnologia-imagem img {
+  width: 100%; /* coloca a imagem com a largura máxima do pai ".tecnologia" */
+  height: 100%; /* coloca a imagem com a altura máxima do pai ".tecnologia" */
+  object-fit: cover; /* impede que a imagem distorça ao redimensionar a tela */
+  object-position: left; /* preserva a esquerda da imagem, começando a cortar a partir da direita */
+}

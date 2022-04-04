@@ -7,12 +7,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box; /* não deixa os valores de "padding" serem somados ao "max-width" */
-  padding: 20px;
-  gap: 20px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-menu {

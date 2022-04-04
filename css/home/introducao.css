@@ -7,11 +7,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
-  box-sizing: border-box; /* para não somar o "padding" ao "max-width", respeitando o valor de "max-width" somente */
-  padding: 0px 20px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .introducao-conteudo {
@@ -20,7 +15,8 @@
 }
 
 .introducao img {
-  height: 100%;
+  width: 100%; /* coloca a imagem com a largura máxima do pai ".introducao" */
+  height: 100%; /* coloca a imagem com a altura máxima do pai ".introducao" */
   object-fit: cover;
   border-radius: 4px;
 }
