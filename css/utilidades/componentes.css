@@ -52,6 +52,34 @@
   color: var(--cor-0);
 }
 
+/* Título páginas internas */
+.titulo-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--cor-11);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+/* ---------------------- MEDIA QUERY 800px ---------------------- */
+
+/* Título páginas internas */
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
+
 /* ---------------------- MEDIA QUERY 600px ---------------------- */
 
 @media (max-width: 600px) {
