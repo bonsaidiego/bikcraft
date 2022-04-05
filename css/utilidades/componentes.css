@@ -1,5 +1,5 @@
 .container {
-  box-sizing: border-box; /* para não somar o "padding" ao "max-width", respeitando o valor de "max-width" somente */
+  box-sizing: border-box; /* para não somar o "padding" ao "max-width", respeitando o valor de "max-width" */
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
