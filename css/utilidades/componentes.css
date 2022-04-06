@@ -33,6 +33,27 @@
   background: var(--cor-9);
 }
 
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s; /* suavização e duração da animação da seta */
+}
+
+.botao.seta:hover::after {
+  transform: translateX(
+    4px
+  ); /* anima a seta, movendo para a direita ("translateX") 4px */
+}
+
 .link {
   display: inline-block; /* para poder receber valores de "padding" */
   color: var(--cor-p1);
