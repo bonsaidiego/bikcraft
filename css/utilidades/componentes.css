@@ -17,6 +17,8 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content; /* diz para o botão ter no máximo o seu tamanho, não expandindo em caso de estar dentro de um grid */
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
